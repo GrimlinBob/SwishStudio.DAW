@@ -1,0 +1,101 @@
+Project Setup & Core Infrastructure (Phase 1)
+TODO: Define Core Project Structure
+Set up version control (e.g., Git repository).
+Choose a primary programming language (e.g., C++, Rust, Java/Kotlin for UI with native audio backend).
+Select a build system (e.g., CMake, Gradle, Meson).
+Establish coding conventions and style guides.
+TODO: Basic Windowing and UI Framework
+Implement a main application window.
+Set up a basic menu bar (File, Edit, View, etc.).
+Choose and integrate a UI toolkit (e.g., Qt, Dear ImGui, Jetpack Compose for Desktop if using Kotlin, custom solution).
+TODO: Audio Engine Core
+Implement low-level audio I/O (input/output) using platform-specific APIs (e.g., ASIO, CoreAudio, ALSA, AAudio for Android if relevant to "XS compat").
+Create a basic audio processing graph/pipeline.
+Implement sample rate and bit depth handling.
+Basic mixing capabilities (summing audio streams).
+TODO: Logging and Error Handling Framework
+Implement a robust logging system for debugging.
+Define a strategy for error handling and reporting. Core DAW Features (Phase 2)
+TODO: Timeline and Arrangement View
+Design and implement the main timeline for arranging audio/MIDI clips.
+Implement zooming and scrolling.
+Grid and snapping functionality.
+Track headers (name, mute, solo, record arm).
+TODO: Audio Track Functionality
+Ability to add/remove audio tracks.
+Audio clip import (WAV, MP3, OGG).
+Basic audio clip manipulation (move, trim, fade in/out).
+Volume and pan controls per track.
+TODO: MIDI Track Functionality
+Ability to add/remove MIDI tracks.
+MIDI clip import/creation.
+Piano roll editor for MIDI notes.
+Velocity and duration editing.
+TODO: Transport Controls
+Play, Pause, Stop, Record buttons.
+Looping functionality.
+Tempo and time signature settings.
+TODO: Mixer View
+Dedicated mixer panel showing faders, pan, mute/solo for each track.
+Master output channel.
+TODO: Plugin Support (Initial)
+Define a basic internal plugin architecture.
+Investigate common plugin formats (VST, AU, LV2) if "XS compat" doesn't refer to a specific internal format.
+Implement loading and processing for at least one simple internal effect (e.g., Gain, Delay). "XS Compat." Specifics (Phase 3 - Requires Clarification)
+TODO: Investigate and Define "XS compat."
+If Cross-Platform:
+TODO: Ensure core audio engine is platform-agnostic or has platform-specific backends.
+TODO: Test UI rendering on target platforms.
+TODO: Set up CI/CD for multi-platform builds.
+If Compatibility with "XS" Software/Standard:
+TODO: Research the "XS" specification/API.
+TODO: Implement necessary interfaces or data formats for "XS" interoperability.
+TODO: Test compatibility with existing "XS" tools/files.
+If "Extra Small" / Lite Version related:
+TODO: Define feature set for the "XS" compatible version.
+TODO: Implement build flags or modules to create different versions. Advanced Features & Polish (Phase 4+)
+TODO: Recording Functionality
+Audio input selection.
+Recording to audio tracks.
+MIDI input recording.
+TODO: Advanced Editing Tools
+Time stretching / Pitch shifting.
+Automation (volume, pan, plugin parameters).
+Beat detection.
+TODO: More Built-in Instruments and Effects
+Basic Synthesizer.
+Sampler.
+EQ, Compressor, Reverb.
+TODO: Expanded Plugin Support
+Support for popular third-party plugin formats (VST2, VST3, AU, LV2).
+Plugin scanning and management.
+TODO: Project Save/Load Functionality
+Define a project file format.
+Implement saving all project data (tracks, clips, settings, automation).
+Implement loading projects.
+TODO: Export/Bounce Functionality
+Export project to audio files (WAV, MP3, OGG).
+Stem export.
+TODO: UI/UX Refinements
+Improve visual design.
+Optimize workflows.
+Add customizable themes/layouts.
+TODO: Performance Optimization
+Optimize audio processing for low latency.
+Efficient memory management.
+Optimize UI responsiveness.
+TODO: Documentation
+User manual.
+Developer documentation (for contributors).
+TODO: Testing
+Unit tests for core components.
+Integration tests for feature interactions.
+User acceptance testing.
+TODO: Community Building (Open Source Aspect)
+Set up contribution guidelines.
+Create forums/communication channels.
+Issue tracking. Recurring Tasks:
+TODO: Regular code refactoring and cleanup.
+TODO: Bug fixing.
+TODO: Dependency updates.
+TODO: Review and merge community contributions (if any). This is a comprehensive but not exhaustive list. The order and priority would depend on the project's specific goals and the meaning of "XS compat." For an open-source project, starting with a minimal viable product (MVP) focusing on core functionality is often a good strategy.
